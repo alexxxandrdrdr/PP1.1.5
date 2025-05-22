@@ -9,12 +9,6 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
     private UserDao userDao;
 
-    public UserServiceImpl(UserDao userDao) {
-        this.userDao = userDao;
-    }
-    public UserServiceImpl() {
-        this.userDao = new UserDaoJDBCImpl();
-    }
 
     @Override
     public void createUsersTable() {
