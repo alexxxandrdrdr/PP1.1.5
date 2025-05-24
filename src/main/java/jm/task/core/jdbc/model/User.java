@@ -1,12 +1,9 @@
 package jm.task.core.jdbc.model;
 
+import javax.persistence.*;
 
-
-
-import jakarta.persistence.*;
-
-@Table(name = "USER")
 @Entity
+@Table(name = "USER")
 public class User {
     @Id
     @Column (name ="ID")
@@ -16,7 +13,7 @@ public class User {
     @Column (name ="NAME")
     private String name;
 
-    @Column (name ="LASRNAME")
+    @Column (name ="LASTNAME")
     private String lastName;
 
     @Column (name ="AGE")
