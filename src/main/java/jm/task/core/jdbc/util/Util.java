@@ -28,8 +28,11 @@ public class Util {
         return conn;
     }
     //hibernate
-    private static SessionFactory sessionFactory;
-    public static SessionFactory getSessionFactory() {
+    private  SessionFactory sessionFactory;
+
+
+
+    public SessionFactory getSessionFactory() {
         if (sessionFactory == null) {
             try {
                 Configuration configuration = new Configuration();
