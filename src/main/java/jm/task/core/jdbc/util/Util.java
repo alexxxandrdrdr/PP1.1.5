@@ -27,10 +27,9 @@ public class Util {
         }
         return conn;
     }
+
     //hibernate
-    private  SessionFactory sessionFactory;
-
-
+    private SessionFactory sessionFactory;
 
     public SessionFactory getSessionFactory() {
         if (sessionFactory == null) {
